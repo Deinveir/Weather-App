@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    color: white;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.main-container{
+    height: 100vh;
+    min-height: 100vh;
+    width: 425px;
+    background: url('San\ Manuel.png') no-repeat center/cover;
+    /* background: rgba(0, 0, 0, 0.3); */
+    position: relative;
+    padding-top: 70px;
+    padding: 70px 2rem 250px 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.overlay{
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+.location{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: 0;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+.temperature-container{
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    gap: 2rem;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+.temperature{
+    font-size: 50px;   
+}
+
+.min-max-temp-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .5rem;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.other-details{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 0 25% 0 25%;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    height: 40%;
+    width: 100%;
+    /* width: 100%; */
+    overflow: scroll;
+}
+
+.other-details::-webkit-scrollbar{
+    display: none;
+}
+
+.other-details li{
+    background-color: transparent;
+    border: 4px white solid;
+    color: black;
+    height: 70%;
+    flex: 0 0 200px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    gap: .5rem;
+    padding: 1rem;
+    margin: 0;
+    overflow: hidden;
+}
+
+.other-details li h3{
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.other-details li span{
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.other-details li i {
+    font-size: 50px;
+}
